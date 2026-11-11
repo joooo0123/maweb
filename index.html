@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffe4ec" />
+  <title> رنرونتي❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <!-- شاشة السؤال الأولى -->
+  <main id="questionScreen" class="question-screen">
+    <div class="question-card">
+      <div class="tiny-label">يكش يتطمر</div>
+      <div class="big-heart">♥</div>
+      <p class="eyebrow">رغم اني متضايق وزعلان منك </p>
+      <h1>إنتِ بتحبيني؟ <span>🥺</span></h1>
+      <p class="question-subtitle">اختاري من قلبك... بس خلي بالك، أنا مستني إجابة واحدة بالذات 💗</p>
+      <div class="answer-area">
+        <button id="yesBtn" class="answer-btn yes-btn">آه طبعًا ❤️</button>
+        <button id="noBtn" class="answer-btn no-btn">لأ 🙈</button>
+      </div>
+      <p id="hint" class="hint">الإجابة الصح مستخبية فين يا ترى؟</p>
+      <div class="card-sparkle sparkle-one">✦</div>
+      <div class="card-sparkle sparkle-two">✧</div>
+    </div>
+  </main>
+
+  <!-- الموقع الرئيسي -->
+  <div id="site" class="site hidden">
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="#home">لـ رنرونتي <span>♥</span></a>
+        <a class="nav-link" href="#letter">رسالة ليكي</a>
+      </nav>
+      <section id="home" class="hero-content">
+        <div class="hero-pill">يكش يتطمر</div>
+        <h1>يا <span>رنرونتي</span>، وجودك حكاية حلوة ❤️</h1>
+        <p>مش لازم يكون في مناسبة عشان أقولك إنك غالية… دي بس هدية بسيطة تفكرك إن في قلب بيتمنى يشوفك مبسوطة دايمًا.</p>
+        <a class="primary-link" href="#letter">افتحي رسالتك <span>♡</span></a>
+        <div class="scroll-note">كمّلي لتحت  ✨</div>
+      </section>
+      <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+    </header>
+
+    <main>
+      <section class="section letter-section" id="letter">
+        <div class="section-heading">
+          <span class="section-kicker">من قلبي لقلبك</span>
+          <h2>جواب صغير ليكي 💌</h2>
+          <p>اضغطي على الظرف، يمكن تلاقي جواه كلام شبه اللي في قلبي.</p>
+        </div>
+        <button id="envelopeBtn" class="envelope-wrap" aria-label="افتحي رسالة الحب">
+          <span class="envelope-heart">♥</span>
+          <span class="envelope">💌</span>
+          <span class="envelope-caption">اضغطي هنا</span>
+        </button>
+      </section>
+
+      <section class="section memories-section" id="memories">
+        <div class="section-heading">
+          <span class="section-kicker">تفاصيل بتفضل في القلب</span>
+          <h2>ذكرياتنا الحلوة 📸</h2>
+        </div>
+        <div class="gallery">
+          <figure class="photo-card">
+            <img src="images/photo1.jpg.jpeg" alt="ذكرى جميلة" onerror="this.src='https://placehold.co/700x850/ffe1eb/9d4566?text=Our+Memory+1'">
+            <figcaption>بحب العشوائيات دي عمتا</figcaption>
+          </figure>
+          <figure class="photo-card photo-card-offset">
+            <img src="images/photo4.jpg.jpeg" alt="لحظة مميزة" onerror="this.src='https://placehold.co/700x850/f8d6e5/9d4566?text=Our+Memory+2'">
+            <figcaption>ضحكة مبحبش أنساها</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="images/photo3.jpg.jpeg" alt="صورة من ذكرياتنا" onerror="this.src='https://placehold.co/700x850/ffe9ef/9d4566?text=Our+Memory+3'">
+            <figcaption>ولسه الحكاية مكملة ❤️</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section quote-section">
+        <div class="quote-mark">“</div>
+        <p>في ناس وجودها بيخلّي اليوم العادي مميز… وإنتِ الناس .</p>
+        <span>— ليكي إنتِ وبس</span>
+      </section>
+
+      <section class="section surprise-section" id="surprise">
+        <div class="section-heading">
+          <span class="section-kicker">آخر حاجة… أو يمكن لأ</span>
+          <h2>جاهزه يحاجه🎁</h2>
+          <p>في قلب صغير مستنيكي، دوسي عليه.</p>
+        </div>
+        <button id="surpriseBtn" class="surprise-heart" aria-label="افتحي المفاجأة">♥</button>
+        <p id="surpriseText" class="surprise-text">اضغطي على القلب 💗</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>اتعمل بكل الحب لـ <strong>رنرونتي</strong> ❤️</div>
+      <small>كل يوم وإنتِ سبب في ابتسامة حلوة.</small>
+      <button id="musicBtn" class="music-btn">♫ شغّلي موسيقى هادية</button>
+      <audio id="backgroundMusic" src="audio/Albumaty.Com__ant_hbyby.mp3" loop></audio>
+    </footer>
+  </div>
+
+  <!-- نافذة الرسالة -->
+  <div id="letterModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+    <div class="modal-card letter-paper">
+      <button class="close-modal" data-close="letterModal" aria-label="إغلاق">×</button>
+      <div class="letter-content">
+        <div class="paper-flower">🌸</div>
+        <h2 id="letterTitle">عشان بنوتي</h2>
+        <p>يمكن الهدية دي بسيطة، بس حبيت أعملك حاجة تفضّل معاكي وتفكرك قد إيه إنتِ شخص مميز.</p>
+        <p>11:11 ❤️✨
+
+عارفة إن النهارده 11/11 والساعة 11:11، وبيقولوا إن الوقت ده وقت الأمنيات، بس أنا مش محتاج أتمنى حاجة، لأن أجمل أمنية في حياتي اتحققت لما عرفتك.
+
+عايز أقولك إنك مش مجرد شخص بحبه، إنتِ بقيتي جزء من يومي وتفكيري وكل حاجة حلوة بتحصل فيه. وجودك في حياتي فرق معايا أكتر ما تتخيلي، وكل يوم بيعدّي بتأكد إني محظوظ إنك معايا.
+
+نفسي أفضل أشوف ضحكتك، وأكون سبب في فرحتك، وأفضل الشخص اللي تحكيله كل حاجة من غير ما تخافي أو تترددي.
+
+ولو كان ليا أمنية واحدة في الدقيقة دي، فهي إن كل 11/11 تعدّي علينا وإحنا لسه مع بعض، بنحب بعض أكتر، وبنصنع ذكريات أحلى من اللي قبلها.
+
+كل 11/11 وإنتِ أجمل صدفة وأحلى اختيار وأغلى حد على قلبي.
+
+ عايز أقولك إن مهما عدى وقت ومهما حصل بينا، أنا مش عايزك تشكي لحظة في مكانتك عندي. إنتِ بالنسبالي مش مجرد حبيبة، إنتِ الشخص اللي بحب أشاركه تفاصيل يومي، واللي أول ما يحصل معايا حاجة حلوة بييجي في بالي إني أحكيهاله، واللي وجوده لوحده بيخلّي اليوم أحلى.
+بحب تفاصيلك الصغيرة قبل الكبيرة، بحب كلامك وضحكتك وطريقتك في الهزار، وحتى الحاجات اللي ممكن تكوني شايفاها عادية أنا بشوفها مميزة لمجرد إنها منك. بحب إنك إنتِ، من غير ما تحتاجي تتغيري أو تبقي حد تاني عشاني.
+      بحبك♥️</p>
+        <p class="letter-sign">من سفسوفتك… ❤️</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
